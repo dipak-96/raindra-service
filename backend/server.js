@@ -1,19 +1,21 @@
 const express = require("express");
-const cors = require("cors");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
-app.use(cors());
-app.use(express.json());
+// API
+app.use("/api/service", require("./routes/service"));
 
 // frontend serve
 app.use(express.static(path.join(__dirname, "../public")));
 
-// routes
-const serviceRoute = require("./routes/service");
-app.use("/api", serviceRoute);
+// default route
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
+
+// PORT (IMPORTANT)
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log("Server running on port " + PORT);

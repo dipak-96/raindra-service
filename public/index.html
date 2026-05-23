@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravindra Hero Honda Service Centre</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Ravindra Service</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services-section">Services</a></li>
+    <li><a href="#form">Book Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Ravindra Hero Honda Service Centre</h1>
+  <p>Trusted Bike Repair & Service in Mahendragarh</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Ravindra Hero Honda Service Centre par aapko har tarah ki bike service milegi.
+    Hum Sunday se Saturday tak subah 8 baje se shaam 8 baje tak open rehte hain.
+    Hum fast aur trusted service dene ke liye jane jaate hain.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services-section" class="section">
+  <h2>Our Services</h2>
+  <ul id="services"></ul>
+</section>
+
+<!-- FORM -->
+<section id="form" class="section">
+  <h2>Book Service</h2>
+
+  <form onsubmit="sendWhatsApp(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="bike" placeholder="Bike Model" required>
+    <input type="text" id="problem" placeholder="Problem" required>
+
+    <button type="submit">Apply Service</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>📍 Bus Stand, Pali, Mahendragarh, Haryana</p>
+  <p>📞 9050866123</p>
+</section>
+
+<!-- MAP -->
+<section class="map">
+  <h2>📍 Our Location</h2>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56206.446809399844!2d76.09442572663677!3d28.30126461660376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391295feb251b449%3A0xf245c9fece09cd60!2sRavinder%20Hero%20Honda%20Service%20Pali!5e0!3m2!1sen!2sin!4v1779519921016!5m2!1sen!2sin"
+  allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Ravindra Hero Honda Service Centre</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
